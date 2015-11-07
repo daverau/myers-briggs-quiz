@@ -15,7 +15,7 @@ body {
 }
 
 section:nth-child(1) {
-  background: #BDC53B;
+  background: #94345C;
 }
 section:nth-child(2) {
   background: #C53B74;
@@ -64,7 +64,7 @@ tr:last-child td {
 .highlight {
   color: orange;
   color: rgba(255,255,255,1);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 
