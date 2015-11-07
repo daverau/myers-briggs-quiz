@@ -1,10 +1,10 @@
 // Myers-Briggs personality type quiz in HTML5
 
-// Setup, dirty style!
+// # Setup, dirty style!
 var mb = {};
 mb.moving = false;
 
-// DOM cache
+// # DOM cache
 mb.$page = document.getElementById('js-page');
 mb.$cells = document.getElementsByTagName('td');
 mb.$hi = document.getElementsByClassName('highlight');
@@ -13,7 +13,20 @@ mb.$sn = document.getElementById('js-sn');
 mb.$tf = document.getElementById('js-tf');
 mb.$jp = document.getElementById('js-jp');
 
-// Shhh... listen... ers
+// # Shhh... listen... ers
+// intro ok
+mb.$introok = document.getElementById('js-introok');
+detectEventClickOrTouch(mb.$introok, introok);
+function introok() {
+	document.getElementsByClassName('intro')[0].classList.add('hide');
+}
+// intro huh
+mb.$introhuh = document.getElementById('js-introhuh');
+detectEventClickOrTouch(mb.$introhuh, introhuh);
+function introhuh() {
+	document.getElementById('js-introhelp').classList.remove('hide');
+}
+// choose a left/right statement
 // using start/move/end to allow scrolling, prob could have used form elements without this
 mb.$page.addEventListener('touchstart', cell, false);
 mb.$page.addEventListener('touchmove', moving, false);
