@@ -1,0 +1,111 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Source Sans Pro', verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section:nth-child(1) {
+  background: #C53B74;
+}
+section:nth-child(2) {
+  background: #8A3BC5;
+}
+section:nth-child(3) {
+  background: #3B85C5;
+}
+section:nth-child(4) {
+  background: #2FA062;
+}
+
+section > h1 {
+  text-align: center;
+  font-size:  3em;
+  margin: 1em 0 0;
+}
+
+table, header {
+  width: 100%;
+}
+section {
+  padding-bottom: 2em;
+}
+section > table {
+  margin-top: 0;
+}
+td {
+  list-style: none;
+  padding: .6em;
+  font-weight: 300;
+  width: 50%;
+  vertical-align: top;
+  color: rgba(0,0,0,.5);
+  color: rgba(255,255,255,.4);
+}
+.highlight {
+  color: orange;
+  color: rgba(255,255,255,1);
+}
+
+
+.page {
+  padding-top: 65px;
+}
+header {
+  text-align: center;
+  position: fixed;
+  background: #333;
+  box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+  height: 65px;
+}
+header table {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+header h1.full {
+  color: #fff;
+}
+header td {
+  width: 25%;
+}
+
+.page tr td:nth-child(1) {
+  text-align: right;
+}
+.page tbody td {
+  cursor: pointer;
+}
+
+h2 {
+  color: rgba(255,255,255,.7);
+}
+h2 .letter {
+  color: rgba(0,0,0,.8);
+  color: rgba(255,255,255,1);
+}
+
+.intro h1 {
+  font-size: 38px;
+  margin-bottom: 0;
+}
+.intro p, .intro h1 {
+  color: #fff;
+  text-align: center;  
+}
+.intro p {
+  margin-top: 0;
+}
